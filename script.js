@@ -2,8 +2,12 @@ var myAge = 31 // global scope
 
 function greet() {
   var myName = 'Max' // local scope (function scope)
-  console.log('Hello ' + myName)
+  function printInfo() {
+    console.log('Hello ' + myName)
+    console.log('I am ' + myAge + ' years old.')
+  }
+  printInfo()
 }
 
-console.log(myAge)
 greet()
+console.log(myName)
